@@ -1,0 +1,22 @@
+development: &default
+  session_secret: '1234567890'
+  site_url: 'http://localhost:3000'
+  site_title: '有范儿的人生'
+  site_motto: 'Small is beautiful, constraint is liberty.'
+  site_description: '老范个人网站，主要记录个人工作和生活'
+  show_me_url: 'http://fanxinglong.info/blog/28/about-robbin'
+  blog_search_ping: false
+  google_cse: '007540752216561218107:cgbwg20yn_o'
+  weibo_api_key: '1234567890'
+  weibo_api_secret: '1234567890'
+  weibo_redirect_uri: 'http://fanxinglong.info/weibo_callback'
+  weibo_uid: '1654762921'
+  weibo_uid_verifier: '6bd0aff2'
+  
+test: 
+  <<: *default
+
+production:
+  <<: *default
+  site_url: 'http://fanxinglong.info'
+  blog_search_ping: true
